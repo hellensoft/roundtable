@@ -1,13 +1,20 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
 import { EffectFade, Navigation, Pagination } from "swiper/modules";
+import Image from "next/image";
+
+const heroData = [
+	{
+		title: "Data to enrich your online business",
+		description:
+			"Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+		image: "",
+	},
+];
 
 const Hero = () => {
 	return (
@@ -23,10 +30,11 @@ const Hero = () => {
 			>
 				<SwiperSlide>
 					<div className="bg-gray-900">
-						<div className="relative isolate overflow-hidden pt-14">
-							<img
+						<div className="relative isolate overflow-hidden">
+							<Image
 								src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
 								alt=""
+								fill
 								className="absolute inset-0 -z-10 h-full w-full object-cover"
 							/>
 							<div
@@ -52,14 +60,6 @@ const Hero = () => {
 										cupidatat commodo. Elit sunt amet fugiat
 										veniam occaecat fugiat aliqua.
 									</p>
-									{/* <div className="mt-10 flex items-center justify-center gap-x-6">
-							<a
-								href="#"
-								className="rounded-md bg-blueLight px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blueDark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blueDark"
-							>
-								Become a Member
-							</a>
-						</div> */}
 								</div>
 							</div>
 							<div
@@ -83,3 +83,14 @@ const Hero = () => {
 };
 
 export default Hero;
+
+{
+	/* <div className="mt-10 flex items-center justify-center gap-x-6">
+							<a
+								href="#"
+								className="rounded-md bg-blueLight px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blueDark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blueDark"
+							>
+								Become a Member
+							</a>
+						</div> */
+}
