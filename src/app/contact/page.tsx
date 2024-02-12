@@ -32,6 +32,7 @@ const contactDetails = [
 export const metadata: Metadata = {
 	title: "Contact || Tanzanite CEO Roundtable",
 	description: "Get to know us",
+	icons: "/images/ceo-logo.png",
 };
 
 const Contact = () => {

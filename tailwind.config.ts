@@ -11,6 +11,7 @@ const config: Config = {
 			colors: {
 				blueDark: "#030e22",
 				blueLight: "#2892ee",
+                gray: "#535456",
 			},
 		},
 	},
